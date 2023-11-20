@@ -1,0 +1,56 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+
+    <div class="row">
+        <div class="col-8 offset-2">
+
+    <h3>Create a new listing: </h3>
+    <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="listing[title]"  placeholder="Villa Victoria's" class = "form-control" required>
+            <br>
+            <div class="valid-feedback">Title lookes good!</div>
+        </div>
+        <div>
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]"  placeholder="enter description" class = "form-control" required> </textarea>
+            <br>
+        </div>
+        
+
+             <div>
+            <label for="image" class="form-label">Upload Listing Image</label>
+            <input type="file"  name="listing[image]"  class = "form-control" >
+            
+            <br>
+             </div>
+
+        <div class="row">
+        <div class="col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input  name="listing[price]"  placeholder="4999" class = "form-control" required >
+            <!-- type="number" -->
+        <br>
+        </div>
+        
+        <!-- <input type="number" name="listing[price]"  placeholder="enter price">
+        <br> -->
+        <div class="col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="listing[country]"  placeholder="England" class="form-control" required>
+            <br>
+        </div>
+        </div>
+       
+        <div>
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="listing[location]"  placeholder="Street 25, London" class= "form-control" required>
+            <br>
+        </div>
+     
+        <button class="btn btn-dark add-btn">Add</button>
+
+    </form>
+    
+</body>
