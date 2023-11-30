@@ -1,5 +1,5 @@
 
-mapboxgl.accessToken = mapToken;
+mapboxgl.accessToken = "pk.eyJ1IjoidnNwMTAxMCIsImEiOiJjbHBsNTZka3gwMHZzMmpvdHNzZXN5OHYzIn0.8U0BUpkkrUV95kki9mwfsg";
 
 const map = new mapboxgl.Map({
   container: "map", // container ID
