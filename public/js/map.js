@@ -1,4 +1,4 @@
-console.log("mapToken:", mapToken);
+
 mapboxgl.accessToken = mapToken;
 
 const map = new mapboxgl.Map({
