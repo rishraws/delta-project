@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-mapboxgl.accessToken = "pk.eyJ1IjoidnNwMTAxMCIsImEiOiJjbHBsNTZka3gwMHZzMmpvdHNzZXN5OHYzIn0.8U0BUpkkrUV95kki9mwfsg";
+
+mapboxgl.accessToken = mapToken;
 
 const map = new mapboxgl.Map({
   container: "map", // container ID
@@ -19,4 +19,4 @@ const marker = new mapboxgl.Marker({ color: "red" })
   )
 
   .addTo(map);
-});
+
